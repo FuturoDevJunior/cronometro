@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chronos 3000 - Cronômetro de alta precisão desenvolvido por Gabriel Ferreira" />
+    <meta name="author" content="Gabriel Ferreira" />
+    <meta name="theme-color" content="#16a085" />
+    <title>Chronos 3000 | by Gabriel Ferreira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="sr-only">Chronos 3000 - Cronômetro de Alta Precisão</h1>
+      
+      <div class="display" id="display" aria-live="polite" role="timer">00:00:00.00</div>
+
+      <div class="controls">
+        <button id="startStop" aria-label="Iniciar ou parar o cronômetro">
+          <span class="material-icons-round">play_arrow</span>
+          <span id="startStopText">Iniciar</span>
+        </button>
+        <button id="reset" aria-label="Resetar o cronômetro">
+          <span class="material-icons-round">replay</span>
+          Resetar
+        </button>
+        <button id="lap" aria-label="Marcar volta">
+          <span class="material-icons-round">flag</span>
+          Volta
+        </button>
+      </div>
+
+      <div class="lap-list" id="lapList" aria-label="Lista de voltas"></div>
+    </main>
+
+    <footer class="signature">
+      <div class="signature-content">
+        <span>Desenvolvido com <span class="material-icons-round signature-icon">code</span> por</span>
+        <a
+          href="https://www.linkedin.com/in/DevFerreiraG/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Perfil do LinkedIn de Gabriel Ferreira"
+        >
+          Gabriel Ferreira
+        </a>
+        <a
+          href="https://buymeacoffee.com/devferreirag"
+          target="_blank"
+          rel="noopener"
+          class="coffee-link"
+          aria-label="Apoie o desenvolvedor comprando um café"
+        >
+          <span class="material-icons-round coffee-icon">coffee</span>
+          Apoie este projeto
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
